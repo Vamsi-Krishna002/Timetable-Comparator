@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student 1</h2>
+        <input type="text" id="student1Name" placeholder="Enter Student 1 Name">
+        <table class="timetable" id="timetable1">
+            <thead>
+                <tr>
+                    <td rowspan="2">Theory Hours</td>
+                </tr>
+                <tr>
+                    <th>08:00 AM<br>08:50 AM</th>
+                    <th>09:00 AM<br>09:50 AM</th>
+                    <th>10:00 AM<br>10:50 AM</th>
+                    <th>11:00 AM<br>11:50 AM</th>
+                    <th>12:00 PM<br>12:50 PM</th>
+                    <th>&nbsp</th>
+                    <th>02:00 PM<br>02:50 PM</th>
+                    <th>03:00 PM<br>03:50 PM</th>
+                    <th>04:00 PM<br>04:50 PM</th>
+                    <th>05:00 PM<br>05:50 PM</th>
+                    <th>06:00 PM<br>06:50 PM</th>
+                    <th>07:00 PM<br>07:50 PM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lab Hours</td>
+                    <td>08:00 AM<br>08:50 AM</td>
+                    <td>08:51 AM<br>09:40 AM</td>
+                    <td>09:51 AM<br>10:40 AM</td>
+                    <td>10:41 AM<br>11:30 AM</td>
+                    <td>11:40 AM<br>12:30 PM</td>
+                    <td>12:31 PM<br>01:20 PM</td>
+                    <td>02:00 PM<br>02:50 PM</td>
+                    <td>02:51 PM<br>03:40 PM</td>
+                    <td>03:51 PM<br>04:40 PM</td>
+                    <td>04:41 PM<br>05:30 PM</td>
+                    <td>05:40 PM<br>06:30 PM</td>
+                    <td>06:31 PM<br>07:20 PM</td>
+                </tr>
+                <tr>
+                    <td>MON</td>
+                    <td class="slot">A1/L1</td>
+                    <td class="slot">F1/L2</td>
+                    <td class="slot">D1/L3</td>
+                    <td class="slot">TB1/L4</td>
+                    <td class="slot">TG1/L5</td>
+                    <td class="slot">L6</td>
+                    <td class="slot">A2/L31</td>
+                    <td class="slot">F2/L32</td>
+                    <td class="slot">D2/L33</td>
+                    <td class="slot">TB2/L34</td>
+                    <td class="slot">TG2/L35</td>
+                    <td class="slot">V3/L36</td>
+                </tr>
+                <tr>
+                    <td>TUE</td>
+                    <td class="slot">B1/L7</td>
+                    <td class="slot">G1/L8</td>
+                    <td class="slot">E1/L9</td>
+                    <td class="slot">TC1/L10</td>
+                    <td class="slot">TAA1/L11</td>
+                    <td class="slot">L12</td>
+                    <td class="slot">B2/L37</td>
+                    <td class="slot">G2/L38</td>
+                    <td class="slot">E2/L39</td>
+                    <td class="slot">TC2/L40</td>
+                    <td class="slot">TAA2/L41</td>
+                    <td class="slot">V4/L42</td>
+                </tr>
+                <tr>
+                    <td>WED</td>
+                    <td class="slot">C1/L13</td>
+                    <td class="slot">A1/L14</td>
+                    <td class="slot">F1/L15</td>
+                    <td class="slot">V1/L16</td>
+                    <td class="slot">V2/L17</td>
+                    <td class="slot">L18</td>
+                    <td class="slot">C2/L43</td>
+                    <td class="slot">A2/L44</td>
+                    <td class="slot">F2/L45</td>
+                    <td class="slot">TD2/L46</td>
+                    <td class="slot">TBB2/L47</td>
+                    <td class="slot">V5/L48</td>
+                </tr>
+                <tr>
+                    <td>THU</td>
+                    <td class="slot">D1/L19</td>
+                    <td class="slot">B1/L20</td>
+                    <td class="slot">G1/L21</td>
+                    <td class="slot">TE1/L22</td>
+                    <td class="slot">TCC1/L23</td>
+                    <td class="slot">L24</td>
+                    <td class="slot">D2/L49</td>
+                    <td class="slot">B2/L50</td>
+                    <td class="slot">G2/L51</td>
+                    <td class="slot">TE2/L52</td>
+                    <td class="slot">TCC2/L53</td>
+                    <td class="slot">V6/L54</td>
+                </tr>
+                <tr>
+                    <td>FRI</td>
+                    <td class="slot">E1/L25</td>
+                    <td class="slot">C1/L26</td>
+                    <td class="slot">TA1/L27</td>
+                    <td class="slot">TF1/L28</td>
+                    <td class="slot">TD1/L29</td>
+                    <td class="slot">L30</td>
+                    <td class="slot">E2/L55</td>
+                    <td class="slot">C2/L56</td>
+                    <td class="slot">TA2/L57</td>
+                    <td class="slot">TF2/L58</td>
+                    <td class="slot">TD2/L59</td>
+                    <td class="slot">V7/L60</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Student 2</h2>
+        <input type="text" id="student2Name" placeholder="Enter Student 2 Name">
+        <table class="timetable" id="timetable2">
+            <thead>
+                <tr>
+                    <td rowspan="2">Theory Hours</td>
+                </tr>
+                <tr>
+                    <th>08:00 AM<br>08:50 AM</th>
+                    <th>09:00 AM<br>09:50 AM</th>
+                    <th>10:00 AM<br>10:50 AM</th>
+                    <th>11:00 AM<br>11:50 AM</th>
+                    <th>12:00 PM<br>12:50 PM</th>
+                    <th>&nbsp</th>
+                    <th>02:00 PM<br>02:50 PM</th>
+                    <th>03:00 PM<br>03:50 PM</th>
+                    <th>04:00 PM<br>04:50 PM</th>
+                    <th>05:00 PM<br>05:50 PM</th>
+                    <th>06:00 PM<br>06:50 PM</th>
+                    <th>07:00 PM<br>07:50 PM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lab Hours</td>
+                    <td>08:00 AM<br>08:50 AM</td>
+                    <td>08:51 AM<br>09:40 AM</td>
+                    <td>09:51 AM<br>10:40 AM</td>
+                    <td>10:41 AM<br>11:30 AM</td>
+                    <td>11:40 AM<br>12:30 PM</td>
+                    <td>12:31 PM<br>01:20 PM</td>
+                    <td>02:00 PM<br>02:50 PM</td>
+                    <td>02:51 PM<br>03:40 PM</td>
+                    <td>03:51 PM<br>04:40 PM</td>
+                    <td>04:41 PM<br>05:30 PM</td>
+                    <td>05:40 PM<br>06:30 PM</td>
+                    <td>06:31 PM<br>07:20 PM</td>
+                </tr>
+                <tr>
+                    <td>MON</td>
+                    <td class="slot">A1/L1</td>
+                    <td class="slot">F1/L2</td>
+                    <td class="slot">D1/L3</td>
+                    <td class="slot">TB1/L4</td>
+                    <td class="slot">TG1/L5</td>
+                    <td class="slot">L6</td>
+                    <td class="slot">A2/L31</td>
+                    <td class="slot">F2/L32</td>
+                    <td class="slot">D2/L33</td>
+                    <td class="slot">TB2/L34</td>
+                    <td class="slot">TG2/L35</td>
+                    <td class="slot">V3/L36</td>
+                </tr>
+                <tr>
+                    <td>TUE</td>
+                    <td class="slot">B1/L7</td>
+                    <td class="slot">G1/L8</td>
+                    <td class="slot">E1/L9</td>
+                    <td class="slot">TC1/L10</td>
+                    <td class="slot">TAA1/L11</td>
+                    <td class="slot">L12</td>
+                    <td class="slot">B2/L37</td>
+                    <td class="slot">G2/L38</td>
+                    <td class="slot">E2/L39</td>
+                    <td class="slot">TC2/L40</td>
+                    <td class="slot">TAA2/L41</td>
+                    <td class="slot">V4/L42</td>
+                </tr>
+                <tr>
+                    <td>WED</td>
+                    <td class="slot">C1/L13</td>
+                    <td class="slot">A1/L14</td>
+                    <td class="slot">F1/L15</td>
+                    <td class="slot">V1/L16</td>
+                    <td class="slot">V2/L17</td>
+                    <td class="slot">L18</td>
+                    <td class="slot">C2/L43</td>
+                    <td class="slot">A2/L44</td>
+                    <td class="slot">F2/L45</td>
+                    <td class="slot">TD2/L46</td>
+                    <td class="slot">TBB2/L47</td>
+                    <td class="slot">V5/L48</td>
+                </tr>
+                <tr>
+                    <td>THU</td>
+                    <td class="slot">D1/L19</td>
+                    <td class="slot">B1/L20</td>
+                    <td class="slot">G1/L21</td>
+                    <td class="slot">TE1/L22</td>
+                    <td class="slot">TCC1/L23</td>
+                    <td class="slot">L24</td>
+                    <td class="slot">D2/L49</td>
+                    <td class="slot">B2/L50</td>
+                    <td class="slot">G2/L51</td>
+                    <td class="slot">TE2/L52</td>
+                    <td class="slot">TCC2/L53</td>
+                    <td class="slot">V6/L54</td>
+                </tr>
+                <tr>
+                    <td>FRI</td>
+                    <td class="slot">E1/L25</td>
+                    <td class="slot">C1/L26</td>
+                    <td class="slot">TA1/L27</td>
+                    <td class="slot">TF1/L28</td>
+                    <td class="slot">TD1/L29</td>
+                    <td class="slot">L30</td>
+                    <td class="slot">E2/L55</td>
+                    <td class="slot">C2/L56</td>
+                    <td class="slot">TA2/L57</td>
+                    <td class="slot">TF2/L58</td>
+                    <td class="slot">TD2/L59</td>
+                    <td class="slot">V7/L60</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="findFreeTime">Find Common Free Time</button>
+        <button id="saveTimetable">Save Timetable</button>
+
+        <h2>Common Free Time</h2>
+        <table class="timetable" id="freeTimeTable">
+            <thead>
+                <tr>
+                    <td rowspan="2">Theory Hours</td>
+                </tr>
+                <tr>
+                    <th>08:00 AM<br>08:50 AM</th>
+                    <th>09:00 AM<br>09:50 AM</th>
+                    <th>10:00 AM<br>10:50 AM</th>
+                    <th>11:00 AM<br>11:50 AM</th>
+                    <th>12:00 PM<br>12:50 PM</th>
+                    <th>&nbsp</th>
+                    <th>02:00 PM<br>02:50 PM</th>
+                    <th>03:00 PM<br>03:50 PM</th>
+                    <th>04:00 PM<br>04:50 PM</th>
+                    <th>05:00 PM<br>05:50 PM</th>
+                    <th>06:00 PM<br>06:50 PM</th>
+                    <th>07:00 PM<br>07:50 PM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lab Hours</td>
+                    <td>08:00 AM<br>08:50 AM</td>
+                    <td>08:51 AM<br>09:40 AM</td>
+                    <td>09:51 AM<br>10:40 AM</td>
+                    <td>10:41 AM<br>11:30 AM</td>
+                    <td>11:40 AM<br>12:30 PM</td>
+                    <td>12:31 PM<br>01:20 PM</td>
+                    <td>02:00 PM<br>02:50 PM</td>
+                    <td>02:51 PM<br>03:40 PM</td>
+                    <td>03:51 PM<br>04:40 PM</td>
+                    <td>04:41 PM<br>05:30 PM</td>
+                    <td>05:40 PM<br>06:30 PM</td>
+                    <td>06:31 PM<br>07:20 PM</td>
+                </tr>
+                <tr>
+                    <td>MON</td>
+                    <td class="slot">A1/L1</td>
+                    <td class="slot">F1/L2</td>
+                    <td class="slot">D1/L3</td>
+                    <td class="slot">TB1/L4</td>
+                    <td class="slot">TG1/L5</td>
+                    <td class="slot">L6</td>
+                    <td class="slot">A2/L31</td>
+                    <td class="slot">F2/L32</td>
+                    <td class="slot">D2/L33</td>
+                    <td class="slot">TB2/L34</td>
+                    <td class="slot">TG2/L35</td>
+                    <td class="slot">V3/L36</td>
+                </tr>
+                <tr>
+                    <td>TUE</td>
+                    <td class="slot">B1/L7</td>
+                    <td class="slot">G1/L8</td>
+                    <td class="slot">E1/L9</td>
+                    <td class="slot">TC1/L10</td>
+                    <td class="slot">TAA1/L11</td>
+                    <td class="slot">L12</td>
+                    <td class="slot">B2/L37</td>
+                    <td class="slot">G2/L38</td>
+                    <td class="slot">E2/L39</td>
+                    <td class="slot">TC2/L40</td>
+                    <td class="slot">TAA2/L41</td>
+                    <td class="slot">V4/L42</td>
+                </tr>
+                <tr>
+                    <td>WED</td>
+                    <td class="slot">C1/L13</td>
+                    <td class="slot">A1/L14</td>
+                    <td class="slot">F1/L15</td>
+                    <td class="slot">V1/L16</td>
+                    <td class="slot">V2/L17</td>
+                    <td class="slot">L18</td>
+                    <td class="slot">C2/L43</td>
+                    <td class="slot">A2/L44</td>
+                    <td class="slot">F2/L45</td>
+                    <td class="slot">TD2/L46</td>
+                    <td class="slot">TBB2/L47</td>
+                    <td class="slot">V5/L48</td>
+                </tr>
+                <tr>
+                    <td>THU</td>
+                    <td class="slot">D1/L19</td>
+                    <td class="slot">B1/L20</td>
+                    <td class="slot">G1/L21</td>
+                    <td class="slot">TE1/L22</td>
+                    <td class="slot">TCC1/L23</td>
+                    <td class="slot">L24</td>
+                    <td class="slot">D2/L49</td>
+                    <td class="slot">B2/L50</td>
+                    <td class="slot">G2/L51</td>
+                    <td class="slot">TE2/L52</td>
+                    <td class="slot">TCC2/L53</td>
+                    <td class="slot">V6/L54</td>
+                </tr>
+                <tr>
+                    <td>FRI</td>
+                    <td class="slot">E1/L25</td>
+                    <td class="slot">C1/L26</td>
+                    <td class="slot">TA1/L27</td>
+                    <td class="slot">TF1/L28</td>
+                    <td class="slot">TD1/L29</td>
+                    <td class="slot">L30</td>
+                    <td class="slot">E2/L55</td>
+                    <td class="slot">C2/L56</td>
+                    <td class="slot">TA2/L57</td>
+                    <td class="slot">TF2/L58</td>
+                    <td class="slot">TD2/L59</td>
+                    <td class="slot">V7/L60</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
