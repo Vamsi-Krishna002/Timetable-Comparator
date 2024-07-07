@@ -1,1 +1,1 @@
-# Timetable-Comparator
+This project is a Timetable Application  built using Node.js, Express.js, and Oracle Database. It allows users to sign up, log in,Compare timetable and find free common time for both students and save and retrieve student timetables.
